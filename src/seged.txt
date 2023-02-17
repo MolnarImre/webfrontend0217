@@ -1,0 +1,29 @@
+ <Text style={{color:"Light", fontSize:15,marginLeft:20,marginTop:20}}>Kompatibilis márka:</Text>
+                <Picker 
+                style={{marginLeft:12, marginBottom:10}}
+                selectedValue={this.state.valaszto1}
+                onValueChange={(ertek) => this.setState({valaszto1:ertek})
+
+
+              }>
+                  {this.state.dataSource.map(item=>
+
+                <Picker.Item label={item.Auto_marka} value={item.marka_id} />
+          )}
+
+              </Picker>
+
+              <Text style={{color:"Light", fontSize:15,marginLeft:20,marginTop:20}}>Kompatibilis tipus:</Text>
+                <Picker 
+                style={{marginLeft:12, marginBottom:10}}
+                selectedValue={this.state.valaszto2}
+                onValueChange={(ertek) => this.setState({valaszto2:ertek})
+
+
+              }>
+                  {this.state.dataSourcetipus.map(item=>
+
+                <Picker.Item label={item.típus} value={item.autotipus_id} />
+          )}
+
+              </Picker>
