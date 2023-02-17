@@ -99,14 +99,6 @@ class App extends Component {
               </Link>
             </li>
 
-            {showModeratorBoard && (
-              <li className="nav-item">
-                <Link to={"/mod"} className="nav-link">
-                  Moderator Board
-                </Link>
-              </li>
-            )}
-
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/Torles"} className="nav-link">
@@ -122,28 +114,8 @@ class App extends Component {
                 </Link>
               </li>
             )}
-
-            {currentUser && (
-              <li className="nav-item">
-                <Link to={"/user"} className="nav-link">
-                  User
-                </Link>
-              </li>
-            )}
-          </div>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-          <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
-          </NavDropdown>
+          </div> 
+        
         </Nav>
         <Nav>
         {currentUser ? (
@@ -189,7 +161,6 @@ class App extends Component {
             <Route path="/user" component={BoardUser} />
             <Route path="/mod" component={BoardModerator} />
             <Route path="/Torles" component={Torles} />
-
             <Route path="/Kereses" component={Kereses} />
             <Route path="/Tipusok" component={Tipusok} />
             <Route path="/Alkatreszek" component={Alkatrszek}/>
