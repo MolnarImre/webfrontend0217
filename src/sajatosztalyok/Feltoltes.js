@@ -71,7 +71,12 @@ komptipus=()=>{
 }
 
 feltoltes=()=>{ 
-    alert(this.state.valaszto2)
+  if(this.state.alkatreszgyarto=="" && this.state.alkatresznev=="" && this.state.alkatreszcikkszam=="" && this.state.alkatreszar=="")
+  alert("Minden mező kitöltése kötelező")
+  else{
+
+  
+    //alert(this.state.valaszto2)
 
 var bemenet={
     alkatreszgyarto:this.state.alkatreszgyarto,
@@ -96,6 +101,7 @@ fetch(Ip.ipcim+'feltoltes', {
   
 }
 );
+  }
 }
 
   render(){

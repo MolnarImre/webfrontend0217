@@ -70,7 +70,7 @@ export default class FetchExample extends React.Component {
           <Text style={{color:"black",fontSize:20,textAlign:"center",marginBottom:20,marginTop:20}}>{'évjárat:'+' '+item.evjarat}</Text>
           <Text style={{color:"black",fontSize:20,textAlign:"center",marginBottom:20,marginTop:20}}>{'üzemanyag:'+' '+item.auto_uzemanyag}</Text>
           <Text style={{color:"black",fontSize:20,textAlign:"center",marginBottom:20,marginTop:20}}>{'motor méret:'+' '+item.auto_motor_meret}</Text>
-          <Image  source={{uri: Ip.ipcim+item.auto_tipus_kep}} style={{width:400,height:300,marginLeft:"auto",marginRight:"auto",resizeMode:'contain'}} />  
+          <Image  source={{uri: Ip.ipcim+item.auto_tipus_kep}} style={{width:600,height:500,marginLeft:"auto",marginRight:"auto",resizeMode:'contain'}} />  
           <View style={{borderBottomWidth:5,marginTop:10}}></View>
           </View>
         
